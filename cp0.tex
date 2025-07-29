@@ -1,0 +1,45 @@
+\chapter{Hamiltonian Systems on Linear Symplectic Spaces}
+
+\section{Introduction}
+
+\qquad Newton's second law for a particle moving in Euclidean three-dimensional space $\mathbb R^3$, under the influence of a \emph{potential energy} $V(q)$, is
+$$
+F=ma,
+$$
+where $q\in \mathbb R^3$, $F(q)=-\nabla V(q)$ is the \emph{force}, $m$ is the mass of the particle, and
+$$
+a=\frac{d^2q}{dt^2}=\ddot q
+$$
+is the acceleration (assuming we start in a postulated privileged coordinate frame called an \emph{inertial frame}. The potential energy $V$ is introduced through the notion of work and the assumption that the force field is conservative. The introduction of the \emph{kinetic energy}
+$$
+K=\frac{1}2 m \left\Vert \dot q\right\Vert^2 
+$$
+is through the \emph{power}, or \emph{rate of work equation}:
+$$
+\frac{dK}{dt}=m\langle \dot q, \ddot q\rangle=\langle \dot q, F\rangle,
+$$
+where $\langle \cdot, \cdot \rangle$ denotes the innter product on $\mathbb R^3$.\\
+
+The \emph{Lagrangian} associated to this system is defined by
+$$
+L(q^i, \dot q^i)=\frac{m}2 \Vert \dot q\Vert^2-V(q)
+$$
+and one can check that the Newton's second law is equivalent to the \emph{Euler-Lagrange equations}:
+$$
+\frac{d}{dt} \frac{\partial L}{\partial \dot q^i}-\frac{\partial L}{\partial q^i}=0,
+$$
+In fact, it follows from the definition of the Lagrangian that
+$$
+\frac{d}{dt} \frac{\partial L}{\partial \dot q^i}-\frac{\partial L}{\partial q^i}=m\ddot q_i-\frac{\partial V}{\partial q_i}=(ma+\nabla V)_i.
+$$
+The Euler-Lagrange equation is a second-order differential equation in $q$. Those equations are worthy of independent study for a general $L$, they are the equations for stationary values of the \emph{action integral}:
+$$
+\delta \int_{t_1}^{t_2}L(q^i, \dot q^i)dt=0,
+$$
+as will be detailed later. These \emph{varitational principles} play a fundamental role throughout mechanics (both in particle mechanics and field theory).\\
+
+A simple computation shows that $dE/dt=0$, where $E$ is the \emph{total energy}
+$$
+E=\frac{!}2m\Vert \dot q\Vert^2+V(q).
+$$
+Lagrange and Hamilton observed that it is 

@@ -1,0 +1,132 @@
+\documentclass[a4paper, 11pt]{book}
+
+\title{An\'alisis Funcional}   
+\author{Francisco G\'omez} 
+\date{\today} 
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{framed}
+\usepackage[svgnames]{xcolor}
+\usepackage[breakable]{tcolorbox}
+
+\usepackage{amsmath, amsthm, amssymb, bbm, mathrsfs, bbold}
+ \usepackage{makeidx}
+ 
+ \usepackage[scr=boondox, cal=esstix]{mathalpha}
+ 
+\DeclareMathOperator{\m}{m}
+\DeclareMathOperator{\s}{s}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Com}{Com}
+\DeclareMathOperator{\pp}{pp}
+\DeclareMathOperator{\ac}{ac}
+\DeclareMathOperator{\sing}{sing}
+\DeclareMathOperator{\cont}{cont}
+\DeclareMathOperator{\ess}{ess}
+\DeclareMathOperator{\ctp}{ctp}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\ba}{ba}
+\DeclareMathOperator{\graf}{graf}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\co}{co}
+\DeclareMathOperator{\ext}{ext}
+
+% CONJUNTOS IMPORTANTES
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\K}{\mathbb K}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\cl}{\mathcal c}
+\newcommand{\wk}{\mathit d}
+
+% ESPACIOS DE HILBERT
+\newcommand{\HH}{\mathscr{H}}
+\newcommand{\NN}{\mathscr{N}}
+\newcommand{\MM}{\mathscr{M}}
+\newcommand{\KK}{\mathscr{K}}
+\newcommand{\BB}{\mathscr{B}}
+\newcommand{\XX}{\mathscr{X}}
+\newcommand{\YY}{\mathscr{Y}}
+\newcommand{\II}{\mathscr{I}}
+\newcommand{\F}{\mathscr{F}}
+
+% OTROS
+\newcommand{\LL}{\mathcal L}
+\newcommand{\CC}{\mathcal C}
+\newcommand{\B}{\mathcal B}
+
+%\newenvironment{proof}{\noindent\textit{Demostraci\'on:}}{\hfill$\square$}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem*{ex*}{Example}
+
+\newtheorem*{nt*}{Note}
+\tcolorboxenvironment{nt*}{breakable, colback=blue!10}
+
+\makeindex
+
+\begin{document}
+
+\begin{titlepage} % Suppresses headers and footers on the title page
+
+	\raggedleft % Right align everything
+	
+	\vspace*{\baselineskip} % Whitespace at the top of the page
+	
+	%------------------------------------------------
+	%	Author
+	%------------------------------------------------
+	
+	{\Large Francisco Gómez H.} % Author name
+	
+	\vspace*{0.167\textheight} % Whitespace before the title
+	
+	%------------------------------------------------
+	%	Title and subtitle
+	%------------------------------------------------
+	
+	\textbf{\LARGE Introductory notes on}\\[\baselineskip] % First title line
+	
+	{\textcolor{Blue}{\Huge Mechanics and Symmetry}}\\[\baselineskip] % Main title line which draws the focus of the reader
+	
+	{\Large \textit{Notes from a mathematical approach}} % Subtitle
+	
+	\vfill % Whitespace between the titles and the publisher
+	
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+%	{\large The Publisher~~\plogo} % Publisher and logo
+	
+	\vspace*{3\baselineskip} % Whitespace at the bottom of the page
+
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\include{cp0}
+\include{cp1}
+\include{cp2}
+\include{cp3}
+\include{cp4}
+\include{cp5}
+
+\printindex
+
+\end{document}
